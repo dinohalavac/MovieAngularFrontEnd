@@ -1,0 +1,21 @@
+<div class="header-banner">
+  <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80" alt="Banner Image" />
+</div>
+<h1>{{ title }}</h1>
+
+<!-- <button class="top-right-btn" (click)="login()">Login</button> -->
+<button *ngIf="!isLoggedIn" class="top-left-btn" (click)="login()">Login</button>
+
+<!-- Dropdown menu (if logged in) -->
+<div *ngIf="isLoggedIn" class="dropdown" style="position: fixed; top: 10px; left: 10px;">
+  <button class="dropbtn">Account ▼</button>
+  <div class="dropdown-content">
+    <a href="#">Profile</a>
+    <a href="/movies">Movies</a>
+    <a href="/home">Home</a>
+    <a href="#" (click)="logout()">Logout</a>
+  </div>
+</div>
+<nav>
+</nav>
+<router-outlet></router-outlet>

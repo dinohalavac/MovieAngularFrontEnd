@@ -1,0 +1,12 @@
+<div class="login-container">
+    <h2>Login Page</h2>
+  
+    <div *ngIf="!authService.isLoggedIn; else loggedIn">
+      <button (click)="login()">Login with Identity</button>
+    </div>
+  
+    <ng-template #loggedIn>
+      <p>Welcome, {{ authService.userName }}</p>
+      <button (click)="logout()">Logout</button>
+    </ng-template>
+  </div>

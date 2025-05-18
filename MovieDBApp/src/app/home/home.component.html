@@ -1,0 +1,13 @@
+<div class="top-nav">
+    <!-- Login Button (shown if not logged in) -->
+   <!--  <button *ngIf="!isLoggedIn" (click)="login()" class="top-left-btn">Login</button> -->
+  
+    <!-- Dropdown menu (shown if logged in) -->
+    <div *ngIf="isLoggedIn" class="dropdown" style="display: inline-block; position: absolute; top: 10px; left: 10px;">
+      <button class="dropbtn">Account ▼</button>
+      <div class="dropdown-content">
+        <a href="#">Profile</a>
+        <a href="#">Logout</a>
+      </div>
+    </div>
+  </div>

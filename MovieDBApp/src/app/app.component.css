@@ -1,0 +1,38 @@
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 120px; /* Adjust as needed */
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1001;
+    flex-direction: column; /* add this */
+    display: flex; /* use flex layout for vertical stacking */
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: flex; /* show the dropdown as flex */
+  }
+  
+  /* Style the links to be block level for full width */
+  .dropdown-content a {
+    padding: 8px 12px;
+    text-decoration: none;
+    display: block; /* ensures full width and vertical stacking */
+    color: black;
+  }
+  
+  /* Optional: Hover effect for links */
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block; /* Show as block for vertical list */
+  }
+  
+  /* Ensure links stack vertically */
+  .dropdown-content a {
+    display: block;
+    padding: 8px 12px;
+    text-decoration: none;
+    color: black;
+  }

@@ -1,0 +1,106 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    background-color: #B7410E; /* Cayenne color */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  .header-banner {
+    width: 100%;
+    overflow: hidden;
+    height: 300px; /* adjust height as needed */
+    position: relative;
+  }
+  
+  .header-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* maintains aspect ratio, covers the area */
+    display: block;
+  }
+  h1 {
+    text-align: center;
+    color: #FFF; /* White text for contrast */
+    margin-top: -50px; /* overlap some space over the banner, adjust as needed */
+    font-size: 3rem;
+  }
+  .top-right-btn {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1000; /* ensure it stays on top of other content */
+  }
+  .top-left-btn {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+  }
+  
+  .dropdown {
+    display: inline-block;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+  }
+  
+  .dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1001;
+  }
+  
+  /* Show dropdown on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 120px; /* Adjust as needed */
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1001;
+    flex-direction: column; /* add this */
+    display: flex; /* use flex layout for vertical stacking */
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: flex; /* show the dropdown as flex */
+  }
+  
+  /* Style the links to be block level for full width */
+  .dropdown-content a {
+    padding: 8px 12px;
+    text-decoration: none;
+    display: block; /* ensures full width and vertical stacking */
+    color: black;
+  }
+  
+  /* Optional: Hover effect for links */
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block; /* Show as block for vertical list */
+  }
+  
+  /* Ensure links stack vertically */
+  .dropdown-content a {
+    display: block;
+    padding: 8px 12px;
+    text-decoration: none;
+    color: black;
+  }
