@@ -1,5 +1,8 @@
 {
   "dependencies": {
     "angular-oauth2-oidc": "^19.0.0"
+  },
+  "scripts": {
+    "build": "ng build"
   }
 }
